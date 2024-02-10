@@ -1,15 +1,15 @@
 import css from "../Profile.module.css"
-export const Profile = ( { data: { username, tag, location, avatar, stats }, } ) => {
+export const Profile = ( { name, tag, location, image, stats } ) => {
   return (
     <>
       <div className={css.card}>
         <div>
           <img
-            src={avatar}
+            src={image}
             alt="User avatar"
             className={css.avatar}
           />
-          <p className={css.username}>{username}</p>
+          <p className={css.username}>{name}</p>
           <p className={`${css.gray} ${css.tag}`}>{tag}</p>
           <p className={css.gray}>{location}</p>
         </div>
