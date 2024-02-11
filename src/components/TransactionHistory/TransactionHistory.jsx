@@ -1,4 +1,4 @@
-import css from "../Table.module.css"
+import css from "./TransactionHistory.module.css"
 export const TransactionHistory = ({ items }) => {
     return (
         <>
